@@ -10,7 +10,7 @@ definir typos complejos personalizados y como usarlos para "auto-ducumentar" el 
 1. Tipos Basicos
     - Sintaxis
     - Tipos de datos primitivos
-    - Definir tipos personalizados
+    - Definir alias (Type) personalizados
     - Definir interfaces personalizadas
     - Desestructuracion de Objetos y Arrays
   
@@ -31,10 +31,12 @@ definir typos complejos personalizados y como usarlos para "auto-ducumentar" el 
 5. Cadenas literales
  
 ### Sobre el tipado estatico avanzado
+> Sobrecarga de funciones
 > Tipos genericons, abstractos , tipos como parametros 
-> enumeraciones
-> tipos condicionales
+> Enumeraciones
+> Tipos condicionales
 > Casting de tipos con (sintaxis: "as" y "<Something>")
+> 'Template Literal Types'
 
 ### Sobre la Comprobacion de tipos en tiempo de ejecucion
 
