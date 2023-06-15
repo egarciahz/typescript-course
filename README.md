@@ -43,14 +43,20 @@ definir typos complejos personalizados y como usarlos para "auto-ducumentar" el 
     - Declarar tipo para 'this'
     - ReturnType y typeof 
 3. Enumeraciones
-    - compilar como constante   
+    - compilar como valor constante
+    - objetos como enumeraciones
 4. Casting de tipos con
     - sintaxis: "as"
     - sintaxis: "<...>"
-    - sintaxis 
+    - sintaxis "satisfies"
 5. Template Literal Type
 6. Mapeo de propiedades
-7. Ejemplo Practico
+    - hacer requerido
+    - hacer opcional
+    - hacer solo lectura
+    - hacer mutable
+    - excluir propiedades  
+8. Ejemplo Practico
 
 ### Sobre la Comprobacion de tipos en tiempo de ejecucion
 
