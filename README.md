@@ -1,7 +1,7 @@
-# typescript-course
+# Tipado estatico en Typescript 
 
-En este curso rapido sobre typescript buscaremos aprender sobre el uso abanzado de las capacidades del lenguaje para 
-definir typos complejos personalizados y como usarlos para "auto-ducumentar" el codigo.
+En este curso sobre typescript vamos a aprender sobre el uso abanzado de las capacidades del lenguaje para 
+definir typos complejos personalizados y como usarlos para comprobar datos y "auto-ducumentar" codigo.
 
 ## Temario del curso
 
@@ -56,16 +56,12 @@ definir typos complejos personalizados y como usarlos para "auto-ducumentar" el 
     - hacer solo lectura
     - hacer mutable
     - excluir propiedades  
-8. Ejemplo Practico
+7. Ejemplo Practico
 
 ### Sobre la Comprobacion de tipos en tiempo de ejecucion
 
-1. typeof para check de tipos primitivos
+1. typeof para comprobacion de tipos primitivos
 2. instanceof para comprobacion de instancias de objetos
-3. evaluacion de cadenas literales
+3. comprobacion de cadenas literales
 4. sintaxis "param is Something" cara evaluacion de tipos
 
-### Sobre el codigo limpio
-
-> Algo sobre prettier y eslint
-> Configuracion de typescript para tsc
