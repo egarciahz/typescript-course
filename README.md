@@ -60,9 +60,11 @@ definir typos complejos personalizados y como usarlos para "auto-ducumentar" el 
 
 ### Sobre la Comprobacion de tipos en tiempo de ejecucion
 
-> Usa typeof, instanceof y cadenas literales
-> Creacion de comprobadores sobre-cargados (sintaxis: "param is Something" )
-  
+1. typeof para check de tipos primitivos
+2. instanceof para comprobacion de instancias de objetos
+3. evaluacion de cadenas literales
+4. sintaxis "param is Something" cara evaluacion de tipos
+
 ### Sobre el codigo limpio
 
 > Algo sobre prettier y eslint
