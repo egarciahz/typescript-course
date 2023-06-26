@@ -11,7 +11,7 @@ Por si fuera poco, uno de los beneficios adicionales de esta característica del
 
 ## JavaScript Bajo el Capo
 
-TypeScript es un superset de JavaScript y también es un lenguaje tras pilado, eso significa que antes de que el código pueda ser interpretado por el intérprete de JavaScript este debe “traducirse” de un lenguaje a otro. Por otro lado, el código de JavaScript resultante de las tareas de tras pilado es código estricto que puede ceñirse a una versión de la especificación ECMAScript siendo la más común ES5 la cual produce un código que puede ser ejecutado por la mayoría de los navegadores modernos.
+TypeScript es un superset de JavaScript y también es un lenguaje transpilado, eso significa que antes de que el código pueda ser ejecutado por el intérprete de JavaScript este debe “traducirse” de un lenguaje a otro. Por otro lado, el código de JavaScript resultante de las tareas de tras pilado es código estricto que puede ceñirse a una versión de la especificación ECMAScript siendo la más común ES5 la cual produce un código que puede ser ejecutado por la mayoría de los navegadores modernos.
 
 Aunque TypeScript sea un lenguaje con capacidades de tipado estático la verdad es que el código resultante en JavaScript sigue siendo de asignación dinámica por lo cual es importante asegurar controles de datos basados en typeof, instanceof y comprobaciones literales, previniendo así inyecciones de datos no comprobados en tiempo de ejecución.
 
