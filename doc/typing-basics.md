@@ -73,8 +73,8 @@ interface PadawanJedi extends Jedi {
   masterName?: string;
 }
 
-const ObiWan: MasterJedi = /* ... */
-const Anakin: PadawanJedi = /* ... */
+const ObiWan: MasterJedi = { ... };
+const Anakin: PadawanJedi = { ... };
 
 ```
 
@@ -177,14 +177,14 @@ const MillenniumFalcon: Starship = {
   imperialCode: 1995,
   model: 'YT-1300',
   maxSpeed: '1050Km/h',
-  hasHiperpropulsor: true
+  hasHiperpropulsor: true,
 }
 
 const TieFighter: Starship = {
   imperialCode: 1987,
   model: 1_978_241,
   maxSpeed: '100MGLT',
-  hasHiperpropulsor: false
+  hasHiperpropulsor: false,
 }
 
 ```
@@ -193,7 +193,35 @@ En el ejemplo anterior `Identification` y `Specs` tienen una propiedad `model` l
 
 ### Cadenas literales como tipos de datos
 
-...
+Una 'cadena literal' es un string 'quemado' en el codigo pero no como el valor de una variable o propiedad si no como un tipo que que si bien es un string, el contrato estrictamente debe cumplir el valor literal definido. Veamos esto en un ejemplo en donde el identificador de una nave puede tomar un valor de entre una serie de opciones para saber si la nave es imperial o rebelde.
+
+```TypeScript
+
+type Identification = {
+  imperialCode: number;
+  model: number;
+  side: 'revel' | 'imperial' | 'old-republic'
+}
+
+// the rest of code ...
+
+const MillenniumFalcon: Starship = {
+  imperialCode: 1995,
+  model: 'YT-1300',
+  maxSpeed: '1050Km/h',
+  hasHiperpropulsor: true,
+  side: 'revel',
+}
+
+const TieFighter: Starship = {
+  imperialCode: 1987,
+  model: 1_978_241,
+  maxSpeed: '100MGLT',
+  hasHiperpropulsor: false,
+  revel: 'new-republic' // Type 'new-republic' is not assignable to type 'revel' | 'imperial' | 'old-republic'
+}
+
+```
 
 ### Tuplas
 
