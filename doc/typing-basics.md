@@ -103,17 +103,93 @@ Como se ve en el ejemplo anterior la sintaxis para definir tipos es basica (y au
 
 ### Combinacion
 
-La Interfaces pueden heredar a otras de orden superior a travez del operador _extends_ pero en el caso los alias podemos tirar de ellos para crear alias compejos haciendo Uniones y Conjunciones de mas de un tipo primitivo e incluso de interfaces u otros alias o todos ellos a la vez.
+Las Interfaces pueden heredar a otras de orden superior a travez del operador _extends_ para definir contratos complejos pero en el caso los alias lo que podemos hacer es tirar unos operadores de Uniones y Conjuncione para crear alias compejos haciendo uso de mas de un tipo primitivo e incluso de interfaces u otros alias o todos ellos a la vez. 
+
 
 #### Union de tipos
 
-```Typescript
+La Union de tipos se logra a travez del simbolo `|` el cual se comporta como un operador logico __or__ excluyente. Veamos un ejemplo a continuacion:
+
+```TypeScript
+
+type PostalAddress = number | string;
+
+let postalAddress: PostalAddress;
+
+postalAddress = '9624 Taylor Road'; // OK
+postalAddress = 9624; // OK
+
+postalAddress = null; // Type 'null' is not assignable to type 'PostalAddress'
+postalAddress = { }  // Type '...' is not assignable to type 'PostalAddress'
+
 ```
 
 #### Conjuncion de tipos
 
-```Typescript
+La Conjuncion de tipos se logra a travez del simbolo `&` el cual se comporta como un operador logico __and__ incluyente. Veamos un ejemplo a continuacion:
+
+```TypeScript
+
+type Identification = {
+  imperialCode: number; 
+}
+
+type Specs = {
+  model: string;
+  hasHiperpropulsor: boolean;
+  maxSpeed?: number | string
+}
+
+type Starship = Identification & Specs;
+
+const MillenniumFalcon: Starship = {
+  imperialCode: 1995,
+  model: 'YT-1300',
+  maxSpeed: '1050Km/h',
+  hasHiperpropulsor: true
+}
+
 ```
+
+Como puede ver en el ejemplo anterior el tipo `Spaceship` creado a partir de la conjuncion de `Identification` y `Specs` se comporta como una nueva definicion que contiene las propiedades de ambos tipos.
+
+#### Convergencia de tipos en operaciones de conbinacion
+
+Al combinar tipos en un alias, TypeScript intentara hacer converger los tipos de las propiedades de cada estructura involucrada en la mezcla, veamos esto en un ejemplo:
+
+
+```TypeScript 
+
+type Identification = {
+  imperialCode: number;
+  model: number;
+}
+
+type Specs = {
+  model: string;
+  hasHiperpropulsor: boolean;
+  maxSpeed?: number | string;
+}
+
+type Starship = Identification & Specs;
+
+const MillenniumFalcon: Starship = {
+  imperialCode: 1995,
+  model: 'YT-1300',
+  maxSpeed: '1050Km/h',
+  hasHiperpropulsor: true
+}
+
+const TieFighter: Starship = {
+  imperialCode: 1987,
+  model: 1_978_241,
+  maxSpeed: '100MGLT',
+  hasHiperpropulsor: false
+}
+
+```
+
+En el ejemplo anterior `Identification` y `Specs` tienen una propiedad `model` la cual identifica el modelo de la nave, en este caso el interprete de TypeScript hara una union de los tipos de la propiedad `model` lo cual seria equivalente a haber definido a `model` tal que  `model: string | number`.
 
 ### Cadenas literales como tipos de datos
 
