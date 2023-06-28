@@ -13,18 +13,19 @@ definir typos complejos personalizados y como usarlos para comprobar datos y "au
     - Definir alias (Type) personalizados
     - Definir interfaces personalizadas
     - Desestructuracion de Objetos y Arrays
-2. Operador de Propagacion.
-    - Desempacar Objetos
-    - Empacar Objetos
-    - Propagador como parametro de una funcion
-3. Tuplas
-    - Que es una tupla.
-    - Implementacion en el lenguaje.
-4. Combinacion
+2. Combinacion
     - Operador de Union
     - Operador de Interseccion
     - Componer Tipos e Interfaces
-5. Cadenas literales
+3. Cadenas literales
+4. Tuplas
+    - Que es una tupla
+    - Implementacion en el lenguaje
+5. Operador de Propagacion
+    - Desestructuracion de Objetos y Arrays
+    - Desempacar Objetos
+    - Empacar Objetos
+    - Propagador como parametro de una funcion
  
 ### Sobre el tipado estatico avanzado
 
