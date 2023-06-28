@@ -225,25 +225,57 @@ const TieFighter: Starship = {
 
 ### Tuplas
 
-...
+JavaScript y por tanto TypeScript son lenguajes de asignacion dinamica por lo que no hacemos cosas como declarar el tamanio de un array o lacantidad total de propiedades en un objeto si no que el lenguaje mismo se encarga de reservar, asignar y liberar la memoria durante todo el ciclo de vida de la aplicacion. Las tuplas entonces podrian parecer no necesario son super utiles a la hora de definir tipos de datos comprimidos o de 'plantillas' como lo es el patron Template para JSON; las tuplas tienen una sintaxis u consumo identica al de un array con el adicional que para estas si defines la cantidad de posiciones validad y no solo eso, tambien defines los tipos de datos admitidos para cada posicion reservada. Veamos esto en un ejemplo.
+
+
+```TypeScript
+
+type Specs = {
+  model: string;
+  hasHiperpropulsor: boolean;
+  maxSpeed?: number | string;
+  dimensions: [number, number, number, string]
+}
+
+MillenniumFalcon: Starship = {
+ // ...
+ dimensions: [34.37, 25.61, 8.27, 'metters']
+}
+
+TieFighter: Starship = {
+ // ...
+ dimensions: [6.3, 4.5, 6.0, 'unknown']
+}
+```
+
+...algo sobre el ejemplo de arriba
+
+```TypeScript
+
+type Specs = {
+  model: string;
+  hasHiperpropulsor: boolean;
+  maxSpeed?: number | string;
+  dimensions: [number, number, number, 'ft' | 'm' | 'cm']
+}
+
+MillenniumFalcon: Starship = {
+ // ...
+ dimensions: [34.37, 25.61, 8.27, 'm']
+}
+
+TieFighter: Starship = {
+ // ...
+ dimensions: [6.3, 4.5, 6.0, 'ft']
+}
+```
+
+...ultimos comentarios sobre el ejemplo de arriba.
 
 ###  Operador de Propagacion
 
-
-1. Tipos Basicos
-4. Combinacion
-    - Operador de Union
-    - Operador de Interseccion
-    - Componer Tipos e Interfaces
-5. Cadenas literales
-4. Tuplas
-    - Que es una tupla.
-    - Implementacion en el lenguaje.
-2. Operador de Propagacion.
-    - Desestructuracion de Objetos y Arrays
-    - Desempacar Objetos
-    - Empacar Objetos
-    - Propagador como parametro de una funcion
-
+- que es la propagacion y como usarla.
+- como empaquetar.
+- como des-empaquetar.
 
  
