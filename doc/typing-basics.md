@@ -218,7 +218,7 @@ const TieFighter: Starship = {
   model: 1_978_241,
   maxSpeed: '100MGLT',
   hasHiperpropulsor: false,
-  revel: 'new-republic' // Type 'new-republic' is not assignable to type 'revel' | 'imperial' | 'old-republic'
+  revel: 'new-republic' // Error: Type 'new-republic' is not assignable to type 'revel' | 'imperial' | 'old-republic'
 }
 
 ```

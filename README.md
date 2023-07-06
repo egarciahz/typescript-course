@@ -38,10 +38,11 @@ definir typos complejos personalizados y como usarlos para comprobar datos y "au
 2. Funciones Avanzadas
    - Inferencia de tipos
    - Desestructuracion de parametros y argumentos
-   - Sobrecarga de funciones. PD: _Always prefer parameters with union types instead of overloads when possible_
+   - Sobrecarga de funciones.
+     > PD: _Always prefer parameters with union types instead of overloads when possible_
    - Funciones genericas
    - Declarar tipo para 'this'
-   - ReturnType y typeof
+   - ReturnType
 3. Enumeraciones
    - compilar como valor constante
    - objetos como enumeraciones
