@@ -1,8 +1,4 @@
-# Tipado estatico avanzado
-
-El super-poder de Typescript es la Inferencia de tipos, por esto es muy comun que no empleemos las capacidades de tipado avanzado que el lenguaje tiene para ofrecernos. En este documento que sirve como una mirada rapida a la implementacion del lenguaje aprenderemos sobre como potenciar nuestro trabajo en solitario, pero mas importante, nuestro trabajo colaborativo escribiendo buenos tipos XD.
-
-## Tipos Genericos
+# Tipos Genericos
 
 ## Parametros en tipado dinamico
 

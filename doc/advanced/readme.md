@@ -21,12 +21,12 @@ El super-poder de Typescript es la Inferencia de tipos, por esto es muy comun qu
 3. Enumeraciones
    - compilar como valor constante
    - objetos como enumeraciones
-4. Casting de tipos con
+4. Casting de Tipos
    - sintaxis: "as"
    - sintaxis: "<...>"
    - sintaxis "satisfies"
 5. Template Literal Type
-6. Mapeo de propiedades
+6. Mapeo de Tipos
    - hacer requerido
    - hacer opcional
    - hacer solo lectura

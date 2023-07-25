@@ -26,6 +26,26 @@ No hay que confindirlos con los constructores de estos mismos que tienen el mism
 - Object
 - Function
 
+### Typos de datos primitivos
+
+> No confundir el tipo de datos primitivos con los constructores primitivos, estos ultimos son objetos nombradas con pascal-case mientras que los tipo son nombrados en minusculas.
+
+- null
+- string
+- number
+- boolean
+- object
+- undefined
+- Function
+- any
+  > any, aunque su traduccion al espanol es 'cualquiera' el compilador lo interpretara como 'no evalues este elemento' y no se recomienda su uso como tipo asignado a menos que estes en proceso de migracion desde JavaScript.
+- never
+  > Usado como tipo de retorno en funciones, este tipo representa valores que nunca se observaran, como en una funcion sin declaracion de retorno o una funcion que siempre terminara en error.
+- void
+  > Usado como tipo de retorno en funciones, representa el valor de retorno de una funcion que no retorna nada, este tipo es diferente de never y undefined.
+- unknow
+  > unknow indica al interprete que el elemento es 'cualquier' tipo, es similar a _any_ pero seguro ya que no puedes hacer nada con un elemento de tipo `unknown`.
+
 ### Sintaxis para asignacion de tipos
 
 La declaracion de tipos sobre una variable, propiedad, parametro, constante etc. esta basada en la misma estructura sintactica: `statement: type = value` y es muy parecido a las declaraciones de tipo clave valor de JSON u Objetos de JavaScript. Un ejemplo de la implementacion de estas declaraciones de tipado estatico puede verse a continuacion:
@@ -105,7 +125,7 @@ Como se ve en el ejemplo anterior la sintaxis para definir tipos es basica (y au
 
 ### Combinacion
 
-Las Interfaces pueden heredar a otras de orden superior a travez del operador _extends_ para definir contratos complejos pero en el caso los alias lo que podemos hacer es tirar unos operadores de Uniones y Conjuncione para crear alias compejos haciendo uso de mas de un tipo primitivo e incluso de interfaces u otros alias o todos ellos a la vez.
+Las Interfaces pueden heredar a otras de orden superior a travez del operador _extends_ para definir contratos complejos pero en el caso los alias, lo que podemos hacer es tirar de unos operadores de Uniones y Conjuncione para crear alias compejos haciendo uso de mas de un tipo primitivo e incluso de interfaces u otros alias o todos ellos a la vez.
 
 #### Union de tipos
 
