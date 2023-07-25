@@ -117,7 +117,7 @@ let distanceWord: MeasurementWord<number>; // -> 'metters'
 
 ```
 
-En este caso el uso de `extends` es comparativo, seria algo como: _Satisface el valor dado al parametro T a un dato tipo number?_. Agamos lo mas complejo actualizando nuestra interfaz `StarShip` para que el valor de la propiedad **pilot** cambie dependiendo de si el parametro `Side` toma un valor u otro usando un **Enum** lo cual es un elemento conocido desde otros lenguajes por lo que solo exploraremos su implementacion. Veamos esto en un ejemplo al refactorizar nuestra interfaz `StarShip`:
+En este caso el uso de `extends` es comparativo, seria algo como: _Satisface el valor dado al parametro T a un dato tipo number?_. Agamoslo mas complejo actualizando nuestra interfaz `StarShip` para que el valor de la propiedad **pilot** cambie dependiendo de si el parametro `Side` toma un valor u otro usando un **Enum** lo cual es un elemento conocido desde otros lenguajes por lo que solo exploraremos su implementacion. Veamos esto en un ejemplo al refactorizar nuestra interfaz `StarShip`:
 
 ```TypeScript
 enum POWER_SIDE {
