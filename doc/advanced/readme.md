@@ -10,14 +10,14 @@ El super-poder de Typescript es la Inferencia de tipos, por esto es muy comun qu
    - acceso indexado a propiedades de tipos
    - operador keyof
    - operador typeof
-2. [ ] Conversiones de tipos
+2. [x] Conversiones de tipos
    - operador: "as"
    - operador "satisfies"
    - sintaxis "param is Type"
 3. [x] Enumeraciones
    - enum bajo el capo
    - objetos como enumeraciones
-4. [x] Funciones Avanzadas
+4. [ ] Funciones Avanzadas
    - Inferencia de tipos
    - Desestructuracion de parametros y argumentos
    - Sobrecarga de funciones.
